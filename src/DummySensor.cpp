@@ -7,7 +7,6 @@ bool DummySensor::begin() {
 	Description.name = "Dummy Sensor";
 	Description.parameters = {"Temperature", "PM 10", "Humidity"};
 	Description.units = {"C", "ug/m^3", "%RH"};
-	Description.id = -1;
 	return true;
 }
 
