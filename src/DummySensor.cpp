@@ -1,12 +1,12 @@
 #include "DummySensor.h"
 
 bool DummySensor::begin() {
-	values.resize(3);
 	Description.parameterQuantity = 3;
 	Description.type = "Testing";
 	Description.name = "Dummy Sensor";
 	Description.parameters = {"Temperature", "PM 10", "Humidity"};
 	Description.units = {"C", "ug/m^3", "%RH"};
+	values.resize(Description.parameterQuantity);
 	return true;
 }
 
