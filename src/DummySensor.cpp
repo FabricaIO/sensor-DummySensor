@@ -1,9 +1,12 @@
 #include "DummySensor.h"
 
+/// @brief Constructs a dummy sensor
+/// @param Name The device name
+DummySensor::DummySensor(String Name) : Sensor(Name) {}
+
 bool DummySensor::begin() {
 	Description.parameterQuantity = 3;
 	Description.type = "Testing";
-	Description.name = "Dummy Sensor";
 	Description.parameters = {"Temperature", "PM 10", "Humidity"};
 	Description.units = {"C", "ug/m^3", "%RH"};
 	values.resize(Description.parameterQuantity);

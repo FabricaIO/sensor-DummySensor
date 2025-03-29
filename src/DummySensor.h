@@ -8,6 +8,7 @@
 
 class DummySensor : public Sensor {
 	public:;
+		DummySensor(String name);
 		bool begin();
 		bool takeMeasurement();
 
