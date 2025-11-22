@@ -6,6 +6,7 @@
 #pragma once
 #include <Sensor.h>
 
+/// @brief Dummy sensor device for testing
 class DummySensor : public Sensor {
 	public:;
 		DummySensor(String name);
